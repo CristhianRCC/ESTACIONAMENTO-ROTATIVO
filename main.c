@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
@@ -10,7 +11,7 @@ int tempo_permanencia, preco_hora, preco_pagar, veiculo;
 
 //ENTRADA DE DADOS:
 printf ("Informe a placa do veiculo: ");
-scanf ("%s", &placa);
+scanf ("%s", placa);
 
 //Escolhendo o tipo de veiculo e armazenando na variavel tipo_veiculo.
 printf ("Informe o tipo do seu veiculo, digite o numero correspondente:\n 1 - Motocicleta\n2 - Carro\n3 - Caminhonete");
@@ -35,7 +36,7 @@ case 3:
     break;
 
 default:
-    printf ("Veiculo invalido.")
+    printf ("Veiculo invalido.");
 }
 printf ("Veiculo escolhido: %s", tipo_veiculo);
 return 0;
