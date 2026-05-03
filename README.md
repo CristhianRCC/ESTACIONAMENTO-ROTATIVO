@@ -79,7 +79,7 @@ Em estacionamentos rotativos, o cliente entra com o veículo, registra a entrada
 
 ## Fluxograma
 
-![Fluxograma do sistema](fluxograma.png)
+![Fluxograma do sistema]
 
 ---
 
