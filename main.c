@@ -7,8 +7,8 @@ int main(){
 //VARIAVEIS DO ALGORITMO:
 char placa [10];
 char tipo_veiculo [12];
-int preco_hora, veiculo;
-int minutos, horas;
+int minutos, horas, preco_hora, veiculo;
+int desconto = 0; 
 float tempo_permanencia, preco_pagar;
 
 //ENTRADA DE DADOS:
@@ -50,7 +50,6 @@ default:
 //Lê o tempo de permanência no estacionamento em horas inteiras.
 printf ("Informe o tempo de permanencia (XX:YY):\n");
 scanf ("%d:%d", &horas, &minutos);
-printf ("O horario que voce escolheu %.2d:%.2d", horas, minutos);
 
 //PROCESSAMENTO:
 tempo_permanencia = horas + (minutos/60.0);
@@ -60,12 +59,21 @@ if (tempo_permanencia <= 1){
     preco_pagar = preco_hora; //Valor base a ser pago, ou seja, a hora cobrada se menor que 1.
 }
 else if (tempo_permanencia > 5 && tempo_permanencia <= 10){
+    desconto = 10;
     preco_pagar = preco_pagar - (preco_pagar * 0.10); //Calcula o valor com 10% de desconto.
 }
 else if (tempo_permanencia > 10){
+    desconto = 10;
     preco_pagar = preco_pagar + 20 - (preco_pagar * 0.10); //Calcula 10% de desconto + multa.
 }
-printf ("\n%.2f", tempo_permanencia);
-printf ("\n%.2f", preco_pagar);
+
+//SAÍDA DE DADOS:
+printf ("\n============ COMPROVANTE ============");
+printf ("\nPlaca do veículo: %s", placa);
+printf ("\nTipo de veículo: %s", tipo_veiculo);
+printf ("\nTempo de permanência.....%d:%d", horas, minutos);
+printf ("\nValor a pagar.....R$%.2f", preco_pagar);
+printf ("\nDesconto sobre o valor.....%d%%", desconto);
+
 return 0;
 }
