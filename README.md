@@ -11,7 +11,7 @@ Prof. Rondineli Seba Salomão
 | Matrícula | Nome |
 |---|---|
 | [MATRÍCULA 1] |  [NOME 1]  |
-| [220033791] | [Lucas André do Nascimento Nogueira] |
+| 220033791 | Lucas André do Nascimento Nogueira |
 | [MATRÍCULA 3] | [NOME 3] |
 
 ---
