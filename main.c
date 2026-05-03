@@ -56,11 +56,15 @@ printf ("O horario que voce escolheu %.2d:%.2d", horas, minutos);
 tempo_permanencia = horas + (minutos/60.0);
 preco_pagar = (preco_hora * tempo_permanencia);
 
-//Calcula o valor mínimo a ser pago, somente para os veículos com tempo_permanência entre 0 e 5 horas.
-if (tempo_permanencia >= 0 && tempo_permanencia <= 5){
-    preco_pagar = (preco_hora * tempo_permanencia);
+if (tempo_permanencia <= 1){
+    preco_pagar = preco_hora; //Valor base a ser pago, ou seja, a hora cobrada se menor que 1.
 }
-else if (tempo_permanencia > 5)
+else if (tempo_permanencia > 5 && tempo_permanencia <= 10){
+    preco_pagar = preco_pagar - (preco_pagar * 0.10); //Calcula o valor com 10% de desconto.
+}
+else if (tempo_permanencia > 10){
+    preco_pagar = preco_pagar + 20 - (preco_pagar * 0.10); //Calcula 10% de desconto + multa.
+}
 printf ("\n%.2f", tempo_permanencia);
 printf ("\n%.2f", preco_pagar);
 return 0;
