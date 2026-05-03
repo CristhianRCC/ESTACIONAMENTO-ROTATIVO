@@ -12,7 +12,8 @@ int desconto = 0;
 float tempo_permanencia, preco_pagar;
 
 //ENTRADA DE DADOS:
-printf ("Informe a placa do veiculo: ");
+printf ("============ESTACIONAMENTO TITAN============\n");
+printf ("\nInforme a placa do veiculo: ");
 scanf ("%s", placa);
 
 //Escolhendo o tipo de veiculo e armazenando na variavel tipo_veiculo.
@@ -68,7 +69,7 @@ else if (tempo_permanencia > 10){
 }
 
 //SAÍDA DE DADOS:
-printf ("\n============ COMPROVANTE ============");
+printf ("\n============COMPROVANTE============");
 printf ("\nPlaca do veículo: %s", placa);
 printf ("\nTipo de veículo: %s", tipo_veiculo);
 printf ("\nTempo de permanência.....%d:%d", horas, minutos);
