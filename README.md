@@ -12,7 +12,7 @@ Prof. Rondineli Seba Salomão
 |---|---|
 | [MATRÍCULA 1] |  [NOME 1]  |
 | 220033791 | Lucas André do Nascimento Nogueira |
-| [MATRÍCULA 3] | [NOME 3] |
+| 2022045586 | Fábio Carvalho Everton |
 
 ---
 
