@@ -10,7 +10,7 @@ Prof. Rondineli Seba Salomão
 
 | Matrícula | Nome |
 |---|---|
-| [MATRÍCULA 1] |  [NOME 1]  |
+| 2022030799 | Cristhian Renan Campos Costa  |
 | 220033791 | Lucas André do Nascimento Nogueira |
 | 2022045586 | Fábio Carvalho Everton |
 
@@ -104,19 +104,19 @@ O programa segue três etapas principais:
 ### Compilar
 
 ```bash
-gcc main.c -o estacionamento
+gcc main.c -o main
 ```
 
 ### Executar
 
 ```bash
-./estacionamento
+./main
 ```
 
 No Windows:
 
 ```bash
-estacionamento.exe
+main.exe
 ```
 
 ---
